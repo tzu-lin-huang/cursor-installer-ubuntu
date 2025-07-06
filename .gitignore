@@ -1,0 +1,27 @@
+# Temporary files
+/tmp/
+*.tmp
+*.temp
+
+# Downloaded AppImages
+*.AppImage
+cursor.AppImage
+
+# Backup files
+*.bak
+*~
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Log files
+*.log
+
+# Utility scripts (user-specific)
+cursor-launcher.sh
