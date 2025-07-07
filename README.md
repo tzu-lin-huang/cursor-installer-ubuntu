@@ -10,6 +10,143 @@ cd cursor-installer-ubuntu
 ./install_cursor.sh
 ```
 
+## 📺 Installation Preview
+
+<details>
+<summary>Click to see the installation process</summary>
+
+```
+╔═══════════════════════════════════════════════════════════╗
+║           Cursor IDE Installation Script v1.0.0           ║
+║                   For Ubuntu 22.04                        ║
+╚═══════════════════════════════════════════════════════════╝
+
+Mode: INSTALL - Normal installation
+
+⚠ Existing Cursor installation detected
+
+Options:
+  1. Cancel
+  2. Repair (keeps settings, replaces binary)
+  3. Reinstall (removes everything, fresh install)
+  4. Uninstall (remove Cursor completely)
+
+Choose option (1-4): 3
+[sudo] password for user: 
+
+[1/6] System Requirements Check
+============================================================
+Detected OS: Ubuntu 22.04.5 LTS
+✓ Ubuntu 22.04 - Fully supported
+
+→ Recommendation: Safe to proceed with installation
+✓ Architecture: x86_64 (amd64)
+✓ Kernel: 6.8.0-60-generic
+✓ CPU: 13th Gen Intel(R) Core(TM) i7-13700E
+✓ Disk space: 1415GB available in /opt
+
+=== System Check Summary ===
+OS Compatibility: ✓ Fully Supported
+Architecture:     ✓ Compatible (x86_64)
+Disk Space:       ✓ Sufficient
+
+[2/6] Checking System Dependencies
+============================================================
+Checking required packages:
+  ✓ wget - Command-line tool for downloading files
+  ✓ curl - Command-line tool for making HTTP requests
+  ✓ jq - JSON processor for parsing API responses
+  ✓ libfuse2 - FUSE library required for AppImage execution
+✓ All dependencies are already installed
+
+[3/6] Downloading Cursor
+============================================================
+Fetching download information from API... ✓
+✓ Found Cursor version: 1.2.1
+⬇ Downloading from: https://downloads.cursor.com/[...]
+
+[==========================================] 100% 182.23M
+
+✓ Downloaded successfully (182MB)
+
+[4/6] Installing Cursor
+============================================================
+Creating installation directory... ✓
+Installing Cursor AppImage... ✓
+Creating command-line launcher... 
+  Detecting GPU hardware and drivers...
+  ⚠ NVIDIA GPU: 01:00.0 3D controller: NVIDIA Corporation Device 27b8 (rev a1)
+  ⚠ NVIDIA driver installed but not functioning
+  ℹ glxinfo not available - install mesa-utils for OpenGL info
+
+  GPU Configuration Summary:
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ℹ GPU acceleration will be DISABLED by default
+  ℹ This prevents common hanging/rendering issues
+  ℹ To enable GPU, edit /usr/local/bin/cursor after installation
+
+  Writing launcher script... ✓
+Verifying installation... ✓ Installed (verification skipped)
+
+[5/6] Desktop Integration
+============================================================
+Creating desktop entry... ✓
+Extracting application icon... ✓
+Updating desktop database... ✓
+Updating icon cache... ✓
+
+[6/6] Post-Installation Setup
+============================================================
+✓ Post-installation setup complete
+
+╔═══════════════════════════════════════════════════════════╗
+║          🚀 Cursor IDE Installation Complete! 🚀          ║
+╚═══════════════════════════════════════════════════════════╝
+
+You can now use Cursor in the following ways:
+
+  1. Application Menu
+     Look for 'Cursor' in your application launcher
+
+  2. Terminal
+     Run: cursor
+     Open current directory: cursor .
+     Open specific file: cursor filename.txt
+
+  3. File Manager
+     Right-click folders and select 'Open with Cursor'
+
+ℹ Notes:
+   • GPU acceleration has been disabled by default to prevent hanging
+   • If you want to try enabling GPU support, edit /usr/local/bin/cursor
+   • The version check may timeout - this is normal behavior
+
+Happy coding with Cursor! 🚀
+
+Troubleshooting:
+   If Cursor fails to start, try:
+   • cursor --verbose to see detailed logs
+   • cursor --disable-extensions if an extension is causing issues
+   • Check logs at: ~/.config/Cursor/logs/
+```
+
+</details>
+
+## 📸 Screenshots
+
+<table>
+  <tr>
+    <td width="50%">
+      <img src="screenshots/preview00.png" alt="Installation Progress" />
+      <p align="center"><em>System checks and downloading</em></p>
+    </td>
+    <td width="50%">
+      <img src="screenshots/preview01.png" alt="Installation Complete" />
+      <p align="center"><em>Ready to use Cursor!</em></p>
+    </td>
+  </tr>
+</table>
+
 ### Installation Options
 
 ```bash
